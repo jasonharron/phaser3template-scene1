@@ -1,5 +1,5 @@
 /*global Phaser*/
-import * as ChangeScene from "./changeScene.js";
+import * as ChangeScene from "./ChangeScene.js";
 
 //This tutorial and assets are from https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6
 
@@ -22,7 +22,7 @@ export default class scene1 extends Phaser.Scene {
 
   create() {
     //Add change scene event listeners
-    ChangeScene.addChangeSceneEventListeners(this);
+    ChangeScene.addSceneEventListeners(this);
 
     const map = this.make.tilemap({ key: "map" });
 
