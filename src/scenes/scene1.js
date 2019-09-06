@@ -5,8 +5,8 @@ import * as ChangeScene from "./ChangeScene.js";
 
 export default class scene1 extends Phaser.Scene {
   preload() {
-    this.load.image("tiles", "assets/tilesets/tuxmon-sample-32px-extruded.png");
-    this.load.tilemapTiledJSON("map", "assets/tilemaps/tuxemon-town.json");
+    this.load.image("tiles", "./assets/tilesets/tuxmon-sample-32px-extruded.png");
+    this.load.tilemapTiledJSON("map", "./assets/tilemaps/tuxemon-town.json");
 
     // An atlas is a way to pack multiple images together into one texture. I'm using it to load all
     // the player animations (walking left, walking right, etc.) in one image. For more info see:
@@ -15,8 +15,8 @@ export default class scene1 extends Phaser.Scene {
     //  https://labs.phaser.io/view.html?src=src/animation/single%20sprite%20sheet.js
     this.load.atlas(
       "atlas",
-      "assets/atlas/atlas.png",
-      "assets/atlas/atlas.json"
+      "./assets/atlas/atlas.png",
+      "./assets/atlas/atlas.json"
     );
   }
 
